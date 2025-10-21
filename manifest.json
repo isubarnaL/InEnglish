@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "English Please!",
+  "name": "English Please! (Google + Microsoft)",
   "version": "1.0.0",
-  "description": "Force English language in all Google services.",
+  "description": "Forces English language across Google, Bing, and Microsoft services.",
   "icons": {
     "16": "eng16.png",
     "48": "eng48.png",
@@ -24,6 +24,6 @@
       "16": "eng16.png",
       "48": "eng48.png"
     },
-    "default_title": "English Please!"
+    "default_title": "English Please! (Google + Microsoft)"
   }
 }

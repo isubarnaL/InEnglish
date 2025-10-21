@@ -1,19 +1,24 @@
-English Please!
+# English Please! (Google + Microsoft)
 ===============
 
-Chrome Extension that forces all Google products to use English by setting `hl=en` in all *.google.com urls.
+English Please! is a lightweight Chrome Extension that forces all Google, Bing, and Microsoft services to use English — no matter where you are in the world 🌍.
 
-Install
+It works automatically by adding the correct language parameters (hl=en, setlang=en-us, mkt=en-us) to URLs when visiting Google, Bing, or Microsoft websites.
+
+## Features
 -------
-Clone this repo and load it in chrome extension.
+Forces English language on:
 
-Why?
-----
+Google Search, Gmail, Maps, YouTube, Drive, etc.
 
-This small extension solves Google language auto-detection problem which causes troubles for people who want their content in English no matter where they are.
+Bing Search
 
+Microsoft.com, Office.com, Outlook.com, Live.com, etc.
 
-For paranoic people
--------------------
+Works automatically — no configuration needed
 
-When you will be installing this, permission to access `*.google.com` will be asked. It is required only for getting URL and rewriting it with `hl=en` in the query string, which forces English language.
+Lightweight & privacy-friendly — no data collection, no tracking
+
+Built with Manifest V3 for performance and security
+
+---
