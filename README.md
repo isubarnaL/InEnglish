@@ -6,6 +6,7 @@ Chrome Extension that forces all Google products to use English by setting `hl=e
 Install
 -------
 Clone this repo and load it in chrome extension.
+
 Why?
 ----
 
