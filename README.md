@@ -1,6 +1,6 @@
-# English Please! (Google + Microsoft)
+# InEnglish (Google + Microsoft)
 
-English Please! is a lightweight Chrome Extension that forces all Google, Bing, and Microsoft services to use English - no matter where you are in the world.
+InEnglish is a lightweight Chrome Extension that forces all Google, Bing, and Microsoft services to use English - no matter where you are in the world.
 
 
 ## Features
