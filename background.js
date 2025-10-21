@@ -1,17 +1,30 @@
-/*!
- * Chrome Extension that forces all Google products to use English.
- *
- * @license MIT
- * @author Tomas Varaneckas <tomas.varaneckas@gmail.com>
- */
-chrome.webRequest.onBeforeRequest.addListener(
-  function (details) {
-    var url = new Url(details.url);
-    if (details.type == 'main_frame' && url.query.hl != 'en') {
-      url.query.hl = 'en';
-      return { redirectUrl: url.toString() };
-    }
-  },
-  { urls: ["*://*.google.com/*"] },
-  ["blocking"]
-);
+// background.js (service worker)
+
+chrome.runtime.onInstalled.addListener(() => {
+  // Clear existing rules
+  chrome.declarativeNetRequest.updateDynamicRules({
+    removeRuleIds: [1],
+    addRules: [
+      {
+        id: 1,
+        priority: 1,
+        action: {
+          type: "redirect",
+          redirect: {
+            transform: {
+              queryTransform: {
+                addOrReplaceParams: [{ key: "hl", value: "en" }]
+              }
+            }
+          }
+        },
+        condition: {
+          urlFilter: "google.com/",
+          resourceTypes: ["main_frame"]
+        }
+      }
+    ]
+  });
+
+  console.log("Force Google English rule installed.");
+});

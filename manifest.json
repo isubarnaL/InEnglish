@@ -1,23 +1,29 @@
 {
-  "name":             "English Please!",
-  "version":          "0.4",
-  "description":      "Force English language in all Google services.",
-  "homepage_url":     "https://github.com/spajus/english-please",
-  "manifest_version": 2,
-
+  "manifest_version": 3,
+  "name": "English Please!",
+  "version": "1.0.0",
+  "description": "Force English language in all Google services.",
   "icons": {
-    "16":  "eng16.png",
-    "48":  "eng48.png",
+    "16": "eng16.png",
+    "48": "eng48.png",
     "128": "eng128.png"
   },
-
   "background": {
-    "scripts": ["url.js", "background.js"]
+    "service_worker": "background.js"
   },
-
-  "permissions":    [
-    "webRequest",
-    "webRequestBlocking",
-    "*://*.google.com/*"
-  ]
+  "permissions": [
+    "declarativeNetRequest",
+    "declarativeNetRequestWithHostAccess",
+    "declarativeNetRequestFeedback"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_icon": {
+      "16": "eng16.png",
+      "48": "eng48.png"
+    },
+    "default_title": "English Please!"
+  }
 }

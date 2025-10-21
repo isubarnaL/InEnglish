@@ -5,14 +5,12 @@ Chrome Extension that forces all Google products to use English by setting `hl=e
 
 Install
 -------
-[Install via Chrome Web Store](https://chrome.google.com/webstore/detail/english-please/lkhoknaphajfjdcpnllakeglfpbbimhp)
-
+Clone this repo and load it in chrome extension.
 Why?
 ----
 
 This small extension solves Google language auto-detection problem which causes troubles for people who want their content in English no matter where they are.
 
-Here is a [discussion about the particular issue of Google services](http://productforums.google.com/forum/?hl=en#!msg/chrome/NFQGOS4kM3k/8H7twZQLnTkJ).
 
 For paranoic people
 -------------------
